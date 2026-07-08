@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f7f9f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.small-bar {
+    display: flex;
+    flex-basis: 20px;
+    width: 120px;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.big-bar {
+    display: flex;
+    flex-basis: 60px;
+    width: 80%;
+    background-color: #d1d1d1;
+    margin-bottom: 20px;
+}
+
+.text-block {
+    display: flex;
+    flex-basis: 80px;
+    width: 100%;
+    background-color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    flex-basis: 140px;
+    height: 40px;
+    background-color: #cccccc;
+}
+
+.stat-box {
+    display: flex;
+    flex-basis: 80px;
+    height: 40px;
+    background-color: #cccccc;
+}
+
+.right-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+.card-line {
+    display: flex;
+    flex-basis: 35px;
+    background-color: #f0f0f0;
+    margin-bottom: 20px;
+}
+
+.inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.box-1 { height: 70px; background-color: #e1f5fe; }
+.box-2 { height: 70px; background-color: #e8f5e9; }
+.box-3 { height: 70px; background-color: #fffde7; }
+.box-4 { height: 70px; background-color: #efebe9; }
+
+.green-button {
+    display: flex;
+    flex-basis: 45px;
+    background-color: #27ae60;
+}
+
+@media (max-width: 800px) {
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .flex-row {
+        flex-direction: column;
+    }
+}
